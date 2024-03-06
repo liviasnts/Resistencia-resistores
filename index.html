@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aplicação: calculo de resistencia </title>
+</head>
+<body>
+    <form>
+        <div> Faixa 01
+            <select id="faixa01">
+                <option value="0" class="preto"> Preta </option>
+                <option value="1" class="marrom"> Marrom </option>
+                <option value="2" class="vermelho"> Vermelho </option>
+                <option value="3" class="laranja"> Laranja </option>
+                <option value="4" class="amarelo"> Amarelo </option>
+                <option value="5" class="verde"> Verde </option>
+                <option value="6" class="azul"> Azul </option>
+                <option value="7" class="violeta"> Violeta </option>
+                <option value="8" class="cinza"> Cinza </option>
+                <option value="9" class="branco"> Branco </option>
+            </select>
+          <div> Faixa 02
+            <select id="faixa02">
+                <option value="0" class="preto"> Preta </option>
+                <option value="1" class="marrom"> Marrom </option>
+                <option value="2" class="vermelho"> Vermelho </option>
+                <option value="3" class="laranja"> Laranja </option>
+                <option value="4" class="amarelo"> Amarelo </option>
+                <option value="5" class="verde"> Verde </option>
+                <option value="6" class="azul"> Azul </option>
+                <option value="7" class="violeta"> Violeta </option>
+                <option value="8" class="cinza"> Cinza </option>
+                <option value="9" class="branco"> Branco </option>
+            </select>
+            </div>
+           <div>  multiplicador
+            <select id ="multi">
+                <option value="1" class="preto"> Preta </option>
+                <option value="10" class="marrom"> Marrom </option>
+                <option value="100" class="vermelho"> Vermelho </option>
+                <option value="1000" class="laranja"> Laranja </option>
+                <option value="10000" class="amarelo"> Amarelo </option>
+                <option value="100000" class="verde"> Verde </option>
+                <option value="1000000" class="azul"> Azul </option>
+                <option value="0.1" class="dourado"> Dourado </option>
+                <option value="0.01" class="prata "> Prata </option>
+            </select>
+            </div>
+           <div> tolerancia 
+            <select id="tole">
+                <option value="1%"> Marrom </option>
+                <option value="2%"> Vermelho </option>
+                <option value="5%"> Dourado </option>
+                <option value="10%"> Prata </option>
+            </select>
+            <p> Resultado Resistencia : <input type="text" id="result"readonly placeholder="Saída"> </p>
+        </div> <p> Resultado Tolerancia : <input type="text" id="result2"readonly placeholder="Saída"> </p>
+        <button type="button" onclick="FazerCalculo()"> Calcular </button>    
+    </form>
+    <script src="Script.js"></script>
+</body>
+</html>
